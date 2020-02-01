@@ -35,7 +35,7 @@ private
 # depending on the controller action. This
 # should come after the other methods
  
-def post_params(*args)
+def pschool_class_params(*args)
   params.require(:class).permit(*args)
 end
 
