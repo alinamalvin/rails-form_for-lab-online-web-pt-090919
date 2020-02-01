@@ -10,14 +10,14 @@ def show
 
 	 
 def create
-  @student = Student.new(post_params(:title, :description))
+  @student = Student.new(post_params(:first_name, :last_name)
   @student.save
   redirect_to class_path(@student)
 end
 
 def update
   @student = Student.find(params[:id])
-  @student.update(student_params(:first_name, :last_name))
+  @student.update(student_params(:first_name, :last_name)
   redirect_to student_path(@student)
 end
 
