@@ -12,7 +12,7 @@ class SchoolClassesController < ActionController::Base
 	 
 def create
   @school_class = SchoolClass.new(school_class_params)
-  @class.save
+  @school_class.save
   redirect_to class_path(@class)
 end
 
