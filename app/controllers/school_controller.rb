@@ -2,7 +2,7 @@ class SchoolClassesController < ActionController::Base
   
 
 	def show
-		@class = Class.find(params[:id])
+		@school_class = SchoolClass.find(params[:id])
 	end
 
 	def new
