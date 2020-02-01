@@ -11,7 +11,7 @@ class SchoolClassesController < ActionController::Base
 
 	 
 def create
-  @school_class = SchoolClass.new(post_params(:title, :description))
+  @school_class = SchoolClass.new(school_class_params)
   @class.save
   redirect_to class_path(@class)
 end
