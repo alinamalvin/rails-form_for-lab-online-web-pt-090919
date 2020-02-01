@@ -1,4 +1,4 @@
-755# `form_for` Lab
+# `form_for` Lab
 
 ## Objectives
 
