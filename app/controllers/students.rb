@@ -12,7 +12,7 @@ def show
 def create
   @student = Student.new(post_params(:first_name, :last_name)
   @student.save
-  redirect_to class_path(@student)
+  redirect_to student_path(@student)
 end
 
 def update
