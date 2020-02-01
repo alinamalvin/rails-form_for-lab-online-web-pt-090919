@@ -11,19 +11,19 @@ class SchoolClassesController < ActionController::Base
 
 	 
 def create
-  @classt = Post.new(post_params(:title, :description))
-  @post.save
-  redirect_to post_path(@post)
+  @classt = Class.new(post_params(:title, :description))
+  @class.save
+  redirect_to class_path(@class)
 end
 
 def update
-  @post = Post.find(params[:id])
-  @post.update(post_params(:title))
-  redirect_to post_path(@post)
+  @class = Class.find(params[:id])
+  @class.update(class_params(:title))
+  redirect_to class_path(@class)
 end
 
 def edit
-	  @post = Post.find(params[:id])
+	  @class = Class.find(params[:id])
 	end
 end
  
@@ -36,7 +36,7 @@ private
 # should come after the other methods
  
 def post_params(*args)
-  params.require(:post).permit(*args)
+  params.require(:class).permit(*args)
 end
 
 	
