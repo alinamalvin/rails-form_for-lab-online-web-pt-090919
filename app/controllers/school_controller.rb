@@ -36,7 +36,7 @@ private
 # should come after the other methods
  
 def pschool_class_params(*args)
-  params.require(:school_class).permit(*args)
+  params.require(:school_class).permit!
 end
 
 	
