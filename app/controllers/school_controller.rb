@@ -6,7 +6,7 @@ class SchoolClassesController < ActionController::Base
 	end
 
 	def new
-		@school_class = Class.new
+		@school_class = SchoolClass.new
 	end
 
 	 
