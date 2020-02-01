@@ -17,8 +17,8 @@ def create
 end
 
 def update
-  @class = Class.find(params[:id])
-  @class.update(class_params(:title))
+  @school_class = SchoolClass.find(params[:id])
+  @school_class.update(class_params(:title))
   redirect_to class_path(@class)
 end
 
