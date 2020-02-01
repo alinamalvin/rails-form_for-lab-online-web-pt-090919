@@ -23,7 +23,7 @@ def update
 end
 
 def edit
-	  @class = Class.find(params[:id])
+	  @school_class = SchoolClass.find(params[:id])
 	end
 end
  
